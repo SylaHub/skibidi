@@ -1,0 +1,2241 @@
+-- Monstrum's Gui to Lua\n-- Version: 3.2
+
+-- Instances:
+
+local CoolMan = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+local Reanimate = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local UIStroke_2 = Instance.new("UIStroke")
+local Respawn = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local UIStroke_3 = Instance.new("UIStroke")
+local Close = Instance.new("TextButton")
+local X = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local UIStroke_4 = Instance.new("UIStroke")
+local UIGradient_3 = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local Thumbnail = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local UIStroke_5 = Instance.new("UIStroke")
+local Changelog = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local Title_4 = Instance.new("TextLabel")
+local Title_5 = Instance.new("TextLabel")
+local Title_6 = Instance.new("TextLabel")
+local Title_7 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local UIStroke_6 = Instance.new("UIStroke")
+local UIGradient_4 = Instance.new("UIGradient")
+local Title_8 = Instance.new("TextLabel")
+local discord = Instance.new("ImageLabel")
+local Invite = Instance.new("TextBox")
+local UIGradient_5 = Instance.new("UIGradient")
+local Minimize = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIStroke_7 = Instance.new("UIStroke")
+local UIGradient_6 = Instance.new("UIGradient")
+local Hide = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_7 = Instance.new("UIGradient")
+local UIStroke_8 = Instance.new("UIStroke")
+local Mobile = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+local UIStroke_9 = Instance.new("UIStroke")
+local HideMobile = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local UIGradient_9 = Instance.new("UIGradient")
+local UIStroke_10 = Instance.new("UIStroke")
+local Close_2 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient_10 = Instance.new("UIGradient")
+local UIStroke_11 = Instance.new("UIStroke")
+local Open = Instance.new("TextLabel")
+local Keybind = Instance.new("TextLabel")
+local TaketheL = Instance.new("TextLabel")
+local PeterParker = Instance.new("TextLabel")
+local KeybindMobile = Instance.new("TextLabel")
+local TaketheL_2 = Instance.new("TextLabel")
+local PeterParker_2 = Instance.new("TextLabel")
+
+--Properties:
+
+CoolMan.Name = "CoolMan"
+CoolMan.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CoolMan.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CoolMan.ResetOnSpawn = false
+
+Frame.Parent = CoolMan
+Frame.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+Frame.BackgroundTransparency = 0.090
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.293733686, 0, 0.204773873, 0)
+Frame.Size = UDim2.new(0, 632, 0, 470)
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = Frame
+
+UIStroke.Parent = Frame
+UIStroke.Color = Color3.fromRGB(157, 159, 41)
+UIStroke.Thickness = 4.000
+
+Reanimate.Name = "Reanimate"
+Reanimate.Parent = Frame
+Reanimate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reanimate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Reanimate.BorderSizePixel = 0
+Reanimate.Position = UDim2.new(0.0348101258, 0, 0.655319154, 0)
+Reanimate.Size = UDim2.new(0, 200, 0, 50)
+Reanimate.Font = Enum.Font.SourceSans
+Reanimate.Text = ""
+Reanimate.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reanimate.TextSize = 14.000
+
+TextLabel.Parent = Reanimate
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Reanimate"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 29.000
+TextLabel.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0, 20)
+UICorner_2.Parent = Reanimate
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(167, 167, 35)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(132, 140, 25)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(132, 132, 24)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(182, 190, 33))}
+UIGradient.Parent = Reanimate
+
+UIStroke_2.Parent = Reanimate
+UIStroke_2.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_2.Thickness = 2.000
+UIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+Respawn.Name = "Respawn"
+Respawn.Parent = Frame
+Respawn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Respawn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Respawn.BorderSizePixel = 0
+Respawn.Position = UDim2.new(0.0379746817, 0, 0.795744658, 0)
+Respawn.Size = UDim2.new(0, 200, 0, 50)
+Respawn.Font = Enum.Font.SourceSans
+Respawn.Text = ""
+Respawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Respawn.TextSize = 14.000
+
+TextLabel_2.Parent = Respawn
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Respawn"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_2.TextSize = 29.000
+TextLabel_2.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 20)
+UICorner_3.Parent = Respawn
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(167, 167, 35)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(132, 140, 25)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(132, 132, 24)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(182, 190, 33))}
+UIGradient_2.Parent = Respawn
+
+UIStroke_3.Parent = Respawn
+UIStroke_3.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_3.Thickness = 2.000
+UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.900316477, 0, 0.0212765951, 0)
+Close.Size = UDim2.new(0, 54, 0, 50)
+Close.Font = Enum.Font.SourceSans
+Close.Text = ""
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 14.000
+
+X.Name = "X"
+X.Parent = Close
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.102407947, 0, 0.119999997, 0)
+X.Size = UDim2.new(0, 42, 0, 38)
+X.Font = Enum.Font.Unknown
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 29.000
+X.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 20)
+UICorner_4.Parent = Close
+
+UIStroke_4.Parent = Close
+UIStroke_4.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_4.Thickness = 2.000
+UIStroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(222, 222, 46)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(114, 122, 22)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(157, 159, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(180, 202, 34))}
+UIGradient_3.Parent = Close
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0427215174, 0, 0.0574468076, 0)
+Title.Size = UDim2.new(0, 197, 0, 34)
+Title.Font = Enum.Font.Michroma
+Title.Text = "FE Cool Man"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = Frame
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0379746817, 0, 0.0872340426, 0)
+Title_2.Size = UDim2.new(0, 197, 0, 50)
+Title_2.Font = Enum.Font.Michroma
+Title_2.Text = "[Genesis Version]"
+Title_2.TextColor3 = Color3.fromRGB(67, 211, 0)
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+Thumbnail.Name = "Thumbnail"
+Thumbnail.Parent = Frame
+Thumbnail.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Thumbnail.BackgroundTransparency = 0.990
+Thumbnail.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Thumbnail.BorderSizePixel = 0
+Thumbnail.Position = UDim2.new(0.0379746817, 0, 0.193617016, 0)
+Thumbnail.Size = UDim2.new(0, 188, 0, 197)
+Thumbnail.Image = "rbxassetid://130086440319283"
+Thumbnail.ImageTransparency = 0.170
+
+UICorner_5.CornerRadius = UDim.new(0, 20)
+UICorner_5.Parent = Thumbnail
+
+UIStroke_5.Parent = Thumbnail
+UIStroke_5.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_5.Thickness = 2.000
+UIStroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+Changelog.Name = "Changelog"
+Changelog.Parent = Frame
+Changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Changelog.BackgroundTransparency = 0.500
+Changelog.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Changelog.BorderSizePixel = 0
+Changelog.Position = UDim2.new(0.354430377, 0, 0.140425533, 0)
+Changelog.Size = UDim2.new(0, 392, 0, 222)
+
+Title_3.Name = "Title"
+Title_3.Parent = Changelog
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0.272256792, 0, 0.109949745, 0)
+Title_3.Size = UDim2.new(0, 188, 0, 50)
+Title_3.Font = Enum.Font.FredokaOne
+Title_3.Text = "[+] Support PermaDeath"
+Title_3.TextColor3 = Color3.fromRGB(67, 211, 0)
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+Title_4.Name = "Title"
+Title_4.Parent = Changelog
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(0.272256792, 0, 0.208186239, 0)
+Title_4.Size = UDim2.new(0, 188, 0, 50)
+Title_4.Font = Enum.Font.FredokaOne
+Title_4.Text = "[+] Added Better Reanimate"
+Title_4.TextColor3 = Color3.fromRGB(67, 211, 0)
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+Title_5.Name = "Title"
+Title_5.Parent = Changelog
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_5.BorderSizePixel = 0
+Title_5.Position = UDim2.new(0.272256792, 0, 0.288404852, 0)
+Title_5.Size = UDim2.new(0, 188, 0, 50)
+Title_5.Font = Enum.Font.FredokaOne
+Title_5.Text = "[+] Bypass Adonis Anti-Cheat"
+Title_5.TextColor3 = Color3.fromRGB(67, 211, 0)
+Title_5.TextSize = 14.000
+Title_5.TextWrapped = true
+
+Title_6.Name = "Title"
+Title_6.Parent = Changelog
+Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.BackgroundTransparency = 1.000
+Title_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_6.BorderSizePixel = 0
+Title_6.Position = UDim2.new(0.272256792, 0, 0.386641353, 0)
+Title_6.Size = UDim2.new(0, 188, 0, 50)
+Title_6.Font = Enum.Font.FredokaOne
+Title_6.Text = "[+] Mobile-Friendly"
+Title_6.TextColor3 = Color3.fromRGB(67, 211, 0)
+Title_6.TextSize = 14.000
+Title_6.TextWrapped = true
+
+Title_7.Name = "Title"
+Title_7.Parent = Changelog
+Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.BackgroundTransparency = 1.000
+Title_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_7.BorderSizePixel = 0
+Title_7.Position = UDim2.new(0.272256792, 0, -0.0215089824, 0)
+Title_7.Size = UDim2.new(0, 188, 0, 50)
+Title_7.Font = Enum.Font.FredokaOne
+Title_7.Text = "- Changelog -"
+Title_7.TextColor3 = Color3.fromRGB(28, 227, 45)
+Title_7.TextSize = 19.000
+Title_7.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 20)
+UICorner_6.Parent = Changelog
+
+UIStroke_6.Parent = Changelog
+UIStroke_6.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_6.Thickness = 4.000
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(150, 150, 31)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(114, 122, 22)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(157, 159, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(180, 202, 34))}
+UIGradient_4.Parent = Changelog
+
+Title_8.Name = "Title"
+Title_8.Parent = Changelog
+Title_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.BackgroundTransparency = 1.000
+Title_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_8.BorderSizePixel = 0
+Title_8.Position = UDim2.new(0.272256821, 0, 0.472226948, 0)
+Title_8.Size = UDim2.new(0, 188, 0, 50)
+Title_8.Font = Enum.Font.FredokaOne
+Title_8.Text = "[+] Added Keybind Info"
+Title_8.TextColor3 = Color3.fromRGB(67, 211, 0)
+Title_8.TextSize = 14.000
+Title_8.TextWrapped = true
+
+discord.Name = "discord"
+discord.Parent = Frame
+discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+discord.BackgroundTransparency = 1.000
+discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+discord.BorderSizePixel = 0
+discord.Position = UDim2.new(0.37816456, 0, 0.655319154, 0)
+discord.Size = UDim2.new(0, 68, 0, 50)
+discord.Image = "rbxassetid://76181608348088"
+
+Invite.Name = "Invite"
+Invite.Parent = Frame
+Invite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Invite.BackgroundTransparency = 1.000
+Invite.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Invite.BorderSizePixel = 0
+Invite.Position = UDim2.new(0.50316453, 0, 0.655319154, 0)
+Invite.Size = UDim2.new(0, 269, 0, 50)
+Invite.Font = Enum.Font.GothamBold
+Invite.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+Invite.Text = ""
+Invite.TextColor3 = Color3.fromRGB(255, 255, 255)
+Invite.TextScaled = true
+Invite.TextSize = 28.000
+Invite.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(222, 222, 46)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(114, 122, 22)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(157, 159, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(180, 202, 34))}
+UIGradient_5.Parent = Frame
+
+Minimize.Name = "Minimize"
+Minimize.Parent = Frame
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.784810126, 0, 0.0212765951, 0)
+Minimize.Size = UDim2.new(0, 54, 0, 50)
+Minimize.Font = Enum.Font.SourceSans
+Minimize.Text = ""
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0, 20)
+UICorner_7.Parent = Minimize
+
+TextLabel_3.Name = "-"
+TextLabel_3.Parent = Minimize
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.102407947, 0, 0.119999997, 0)
+TextLabel_3.Size = UDim2.new(0, 42, 0, 38)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "-"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 29.000
+TextLabel_3.TextWrapped = true
+
+UIStroke_7.Parent = Minimize
+UIStroke_7.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_7.Thickness = 2.000
+UIStroke_7.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(222, 222, 46)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(114, 122, 22)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(157, 159, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(180, 202, 34))}
+UIGradient_6.Parent = Minimize
+
+Hide.Name = "Hide"
+Hide.Parent = Frame
+Hide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hide.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hide.BorderSizePixel = 0
+Hide.Position = UDim2.new(0.37816456, 0, 0.882978737, 0)
+Hide.Size = UDim2.new(0, 186, 0, 43)
+Hide.Font = Enum.Font.SourceSans
+Hide.Text = ""
+Hide.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hide.TextSize = 14.000
+
+TextLabel_4.Parent = Hide
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-0.0215053763, 0, 0.0519309826, 0)
+TextLabel_4.Size = UDim2.new(0, 194, 0, 37)
+TextLabel_4.Font = Enum.Font.Michroma
+TextLabel_4.Text = "Hide Keybind Info"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 23.000
+TextLabel_4.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 20)
+UICorner_8.Parent = Hide
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(167, 167, 35)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(132, 140, 25)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(132, 132, 24)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(182, 190, 33))}
+UIGradient_7.Parent = Hide
+
+UIStroke_8.Parent = Hide
+UIStroke_8.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_8.Thickness = 2.000
+UIStroke_8.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+Mobile.Name = "Mobile"
+Mobile.Parent = Frame
+Mobile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mobile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mobile.BorderSizePixel = 0
+Mobile.Position = UDim2.new(0.694620252, 0, 0.882978737, 0)
+Mobile.Size = UDim2.new(0, 172, 0, 43)
+Mobile.Font = Enum.Font.SourceSans
+Mobile.Text = ""
+Mobile.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mobile.TextSize = 14.000
+
+TextLabel_5.Parent = Mobile
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(-0.0680169389, 0, 0.0519309826, 0)
+TextLabel_5.Size = UDim2.new(0, 194, 0, 37)
+TextLabel_5.Font = Enum.Font.Michroma
+TextLabel_5.Text = "Mobile Keyboard"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 21.000
+TextLabel_5.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0, 20)
+UICorner_9.Parent = Mobile
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(167, 167, 35)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(132, 140, 25)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(132, 132, 24)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(182, 190, 33))}
+UIGradient_8.Parent = Mobile
+
+UIStroke_9.Parent = Mobile
+UIStroke_9.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_9.Thickness = 2.000
+UIStroke_9.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+HideMobile.Name = "HideMobile"
+HideMobile.Parent = Frame
+HideMobile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HideMobile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideMobile.BorderSizePixel = 0
+HideMobile.Position = UDim2.new(0.37816456, 0, 0.882978737, 0)
+HideMobile.Size = UDim2.new(0, 186, 0, 43)
+HideMobile.Visible = false
+HideMobile.Font = Enum.Font.SourceSans
+HideMobile.Text = ""
+HideMobile.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideMobile.TextSize = 14.000
+
+TextLabel_6.Parent = HideMobile
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(-0.0215053763, 0, 0.0519309826, 0)
+TextLabel_6.Size = UDim2.new(0, 194, 0, 37)
+TextLabel_6.Font = Enum.Font.Michroma
+TextLabel_6.Text = "Hide Keybind Info"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 23.000
+TextLabel_6.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 20)
+UICorner_10.Parent = HideMobile
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(167, 167, 35)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(132, 140, 25)), ColorSequenceKeypoint.new(0.75, Color3.fromRGB(132, 132, 24)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(182, 190, 33))}
+UIGradient_9.Parent = HideMobile
+
+UIStroke_10.Parent = HideMobile
+UIStroke_10.Color = Color3.fromRGB(157, 159, 41)
+UIStroke_10.Thickness = 2.000
+UIStroke_10.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+Close_2.Name = "Close"
+Close_2.Parent = CoolMan
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.0112824999, 0, 0.468512774, 0)
+Close_2.Size = UDim2.new(0, 54, 0, 50)
+Close_2.Visible = false
+Close_2.Font = Enum.Font.SourceSans
+Close_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(0, 20)
+UICorner_11.Parent = Close_2
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(84, 0, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(54, 0, 0)), ColorSequenceKeypoint.new(0.76, Color3.fromRGB(76, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(109, 0, 0))}
+UIGradient_10.Parent = Close_2
+
+UIStroke_11.Parent = Close_2
+UIStroke_11.Color = Color3.fromRGB(70, 0, 0)
+UIStroke_11.Thickness = 2.000
+UIStroke_11.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+Open.Name = "Open"
+Open.Parent = Close_2
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.12092647, 0, 0.100000001, 0)
+Open.Size = UDim2.new(0, 39, 0, 40)
+Open.Font = Enum.Font.Unknown
+Open.Text = ""
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 29.000
+Open.TextWrapped = true
+
+Keybind.Name = "Keybind"
+Keybind.Parent = CoolMan
+Keybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keybind.BackgroundTransparency = 1.000
+Keybind.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Keybind.BorderSizePixel = 0
+Keybind.Position = UDim2.new(-0.0178281255, 0, 0.883068144, 0)
+Keybind.Size = UDim2.new(0, 372, 0, 22)
+Keybind.Font = Enum.Font.Arcade
+Keybind.Text = "- Keybinds -"
+Keybind.TextColor3 = Color3.fromRGB(255, 0, 0)
+Keybind.TextScaled = true
+Keybind.TextSize = 14.000
+Keybind.TextWrapped = true
+
+TaketheL.Name = "TaketheL"
+TaketheL.Parent = Keybind
+TaketheL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TaketheL.BackgroundTransparency = 1.000
+TaketheL.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TaketheL.BorderSizePixel = 0
+TaketheL.Position = UDim2.new(-0.00150651834, 0, 1.39047515, 0)
+TaketheL.Size = UDim2.new(0, 372, 0, 22)
+TaketheL.Font = Enum.Font.Arcade
+TaketheL.Text = "- Hold L for Take the L"
+TaketheL.TextColor3 = Color3.fromRGB(69, 255, 215)
+TaketheL.TextScaled = true
+TaketheL.TextSize = 14.000
+TaketheL.TextWrapped = true
+
+PeterParker.Name = "PeterParker"
+PeterParker.Parent = Keybind
+PeterParker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PeterParker.BackgroundTransparency = 1.000
+PeterParker.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PeterParker.BorderSizePixel = 0
+PeterParker.Position = UDim2.new(0.104687721, 0, 2.41811299, 0)
+PeterParker.Size = UDim2.new(0, 372, 0, 22)
+PeterParker.Font = Enum.Font.Arcade
+PeterParker.Text = "- Hold for Peter Parker Dance"
+PeterParker.TextColor3 = Color3.fromRGB(94, 132, 255)
+PeterParker.TextScaled = true
+PeterParker.TextSize = 14.000
+PeterParker.TextWrapped = true
+
+KeybindMobile.Name = "KeybindMobile"
+KeybindMobile.Parent = CoolMan
+KeybindMobile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeybindMobile.BackgroundTransparency = 1.000
+KeybindMobile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeybindMobile.BorderSizePixel = 0
+KeybindMobile.Position = UDim2.new(-0.0556728542, 0, 0.763149023, 0)
+KeybindMobile.Size = UDim2.new(0, 372, 0, 22)
+KeybindMobile.Visible = false
+KeybindMobile.Font = Enum.Font.Arcade
+KeybindMobile.Text = "- Keybinds -"
+KeybindMobile.TextColor3 = Color3.fromRGB(255, 0, 0)
+KeybindMobile.TextScaled = true
+KeybindMobile.TextSize = 14.000
+KeybindMobile.TextWrapped = true
+
+TaketheL_2.Name = "TaketheL"
+TaketheL_2.Parent = KeybindMobile
+TaketheL_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TaketheL_2.BackgroundTransparency = 1.000
+TaketheL_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TaketheL_2.BorderSizePixel = 0
+TaketheL_2.Position = UDim2.new(-0.00150651834, 0, 1.39047515, 0)
+TaketheL_2.Size = UDim2.new(0, 372, 0, 22)
+TaketheL_2.Font = Enum.Font.Arcade
+TaketheL_2.Text = "- Hold L for Take the L"
+TaketheL_2.TextColor3 = Color3.fromRGB(69, 255, 215)
+TaketheL_2.TextScaled = true
+TaketheL_2.TextSize = 14.000
+TaketheL_2.TextWrapped = true
+
+PeterParker_2.Name = "PeterParker"
+PeterParker_2.Parent = KeybindMobile
+PeterParker_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PeterParker_2.BackgroundTransparency = 1.000
+PeterParker_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PeterParker_2.BorderSizePixel = 0
+PeterParker_2.Position = UDim2.new(0.104687721, 0, 2.41811299, 0)
+PeterParker_2.Size = UDim2.new(0, 372, 0, 22)
+PeterParker_2.Font = Enum.Font.Arcade
+PeterParker_2.Text = "- Hold for Peter Parker Dance"
+PeterParker_2.TextColor3 = Color3.fromRGB(94, 132, 255)
+PeterParker_2.TextScaled = true
+PeterParker_2.TextSize = 14.000
+PeterParker_2.TextWrapped = true
+
+-- Scripts:
+
+local function ZEXWIFG_script() -- Reanimate.LocalScript 
+	local script = Instance.new('LocalScript', Reanimate)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	local UserInputService = game:GetService("UserInputService")
+	
+	-- Check if user is on a touch-enabled device (mobile/tablet)
+	local isMobile = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+	
+	-- Choose the appropriate script URL
+	local scriptURL
+	
+	if isMobile then
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Public-Bathroom-Simulator-Adonis-Anti-Cheat-Bypass-19376"))()
+	else
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua'))()
+	end
+	
+	-- Load and execute the remote script
+	local success, result = pcall(function()
+		loadstring(game:HttpGet(scriptURL))()
+	end)
+	
+	-- Optional: Print error if something goes wrong
+	if not success then
+		warn("Failed to load script:", result)
+	end
+	
+	wait(0.5)
+	
+	
+	do
+		local Accessories = {}
+	
+		local Aligns = {}
+	
+		local Attachments = {}
+	
+		local BindableEvent = nil
+	
+		local Blacklist = {}
+	
+		local CFrame = CFrame
+		local CFrameidentity = CFrame.identity
+		local CFramelookAt = CFrame.lookAt
+		local CFramenew = CFrame.new
+	
+		local Character = nil
+	
+		local CurrentCamera = nil
+	
+		local Enum = Enum
+		local Custom = Enum.CameraType.Custom
+		local Health = Enum.CoreGuiType.Health
+		local HumanoidRigType = Enum.HumanoidRigType
+		local R6 = HumanoidRigType.R6
+		local Dead = Enum.HumanoidStateType.Dead
+		local LockCenter = Enum.MouseBehavior.LockCenter
+		local MouseButton1 = Enum.UserInputType.MouseButton1
+	
+		local Exceptions = {}
+	
+		local game = game
+		local Clone = game.Clone
+		local Close = game.Close
+		local Connect = Close.Connect
+		local Disconnect = Connect(Close, function() end).Disconnect
+		local Wait = Close.Wait
+		local Destroy = game.Destroy
+		local FindFirstAncestorOfClass = game.FindFirstAncestorOfClass
+		local FindFirstAncestorWhichIsA = game.FindFirstAncestorWhichIsA
+		local FindFirstChild = game.FindFirstChild
+		local FindFirstChildOfClass = game.FindFirstChildOfClass
+		local Players = FindFirstChildOfClass(game, "Players")
+		local CreateHumanoidModelFromDescription = Players.CreateHumanoidModelFromDescription
+		local GetPlayers = Players.GetPlayers
+		local LocalPlayer = Players.LocalPlayer
+		local CharacterAdded = LocalPlayer.CharacterAdded
+		local ConnectDiedSignalBackend = LocalPlayer.ConnectDiedSignalBackend
+		local Mouse = LocalPlayer:GetMouse()
+		local Kill = LocalPlayer.Kill
+		local RunService = FindFirstChildOfClass(game, "RunService")
+		local PostSimulation = RunService.PostSimulation
+		local PreRender = RunService.PreRender
+		local PreSimulation = RunService.PreSimulation
+		local StarterGui = FindFirstChildOfClass(game, "StarterGui")
+		local GetCoreGuiEnabled = StarterGui.GetCoreGuiEnabled
+		local SetCore = StarterGui.SetCore
+		local SetCoreGuiEnabled = StarterGui.SetCoreGuiEnabled
+		local Workspace = FindFirstChildOfClass(game, "Workspace")
+		local FallenPartsDestroyHeight = Workspace.FallenPartsDestroyHeight
+		local HatDropY = FallenPartsDestroyHeight - 0.7
+		local FindFirstChildWhichIsA = game.FindFirstChildWhichIsA
+		local UserInputService = FindFirstChildOfClass(game, "UserInputService")
+		local InputBegan = UserInputService.InputBegan
+		local IsMouseButtonPressed = UserInputService.IsMouseButtonPressed
+		local GetChildren = game.GetChildren
+		local GetDescendants = game.GetDescendants
+		local GetPropertyChangedSignal = game.GetPropertyChangedSignal
+		local CurrentCameraChanged = GetPropertyChangedSignal(Workspace, "CurrentCamera")
+		local MouseBehaviorChanged = GetPropertyChangedSignal(UserInputService, "MouseBehavior")
+		local IsA = game.IsA
+		local IsDescendantOf = game.IsDescendantOf
+	
+		local Highlights = {}
+	
+		local Instancenew = Instance.new
+		local R15Animation = Instancenew("Animation")
+		local R6Animation = Instancenew("Animation")
+		local HumanoidDescription = Instancenew("HumanoidDescription")
+		local HumanoidModel = CreateHumanoidModelFromDescription(Players, HumanoidDescription, R6)
+		local R15HumanoidModel = CreateHumanoidModelFromDescription(Players, HumanoidDescription, HumanoidRigType.R15)
+		local SetAccessories = HumanoidDescription.SetAccessories
+		local ModelBreakJoints = HumanoidModel.BreakJoints
+		local Head = HumanoidModel.Head
+		local BasePartBreakJoints = Head.BreakJoints
+		local GetJoints = Head.GetJoints
+		local IsGrounded = Head.IsGrounded
+		local Humanoid = HumanoidModel.Humanoid
+		local ApplyDescription = Humanoid.ApplyDescription
+		local ChangeState = Humanoid.ChangeState
+		local EquipTool = Humanoid.EquipTool
+		local GetAppliedDescription = Humanoid.GetAppliedDescription
+		local GetPlayingAnimationTracks = Humanoid.GetPlayingAnimationTracks
+		local LoadAnimation = Humanoid.LoadAnimation
+		local Move = Humanoid.Move
+		local UnequipTools = Humanoid.UnequipTools
+		local ScaleTo = HumanoidModel.ScaleTo
+	
+		local IsFirst = false
+		local IsHealthEnabled = nil
+		local IsLockCenter = false
+		local IsRegistered = false
+		local IsRunning = false
+	
+		local LastTime = nil
+	
+		local math = math
+		local mathrandom = math.random
+		local mathsin = math.sin
+	
+		local nan = 0 / 0
+	
+		local next = next
+	
+		local OptionsAccessories = nil
+		local OptionsApplyDescription = nil
+		local OptionsBreakJointsDelay = nil
+		local OptionsClickFling = nil
+		local OptionsDisableCharacterCollisions = nil
+		local OptionsDisableHealthBar = nil
+		local OptionsDisableRigCollisions = nil
+		local OptionsDefaultFlingOptions = nil
+		local OptionsHatDrop = nil
+		local OptionsHideCharacter = nil
+		local OptionsParentCharacter = nil
+		local OptionsPermanentDeath = nil
+		local OptionsRefit = nil
+		local OptionsRigTransparency = nil
+		local OptionsSetCameraSubject = nil
+		local OptionsSetCameraType = nil
+		local OptionsSetCharacter = nil
+		local OptionsSetCollisionGroup = nil
+		local OptionsSimulationRadius = nil
+		local OptionsTeleportRadius = nil
+		local OptionsUseServerBreakJoints
+	
+		local osclock = os.clock
+	
+		local PreRenderConnection = nil
+	
+		local RBXScriptConnections = {}
+	
+		local Refitting = false
+	
+		local replicatesignal = replicatesignal
+	
+		local Rig = nil
+		local RigHumanoid = nil
+		local RigHumanoidRootPart = nil
+	
+		local sethiddenproperty = sethiddenproperty
+		local setscriptable = setscriptable
+	
+		local stringfind = string.find
+	
+		local table = table
+		local tableclear = table.clear
+		local tablefind = table.find
+		local tableinsert = table.insert
+		local tableremove = table.remove
+	
+		local Targets = {}
+	
+		local task = task
+		local taskdefer = task.defer
+		local taskspawn = task.spawn
+		local taskwait = task.wait
+	
+		local Time = nil
+	
+		local Vector3 = Vector3
+		local Vector3new = Vector3.new
+		local FlingVelocity = Vector3new(16384, 16384, 16384)
+		local HatDropLinearVelocity = Vector3new(0, 27, 0)
+		local HideCharacterOffset = Vector3new(0, - 30, 0)
+		local Vector3one = Vector3.one
+		local Vector3xzAxis = Vector3new(1, 0, 1)
+		local Vector3zero = Vector3.zero
+		local AntiSleep = Vector3zero
+	
+		R15Animation.AnimationId = "rbxassetid://507767968"
+		R6Animation.AnimationId = "rbxassetid://180436148"
+	
+		Humanoid = nil
+	
+		Destroy(HumanoidDescription)
+		HumanoidDescription = nil
+	
+		local FindFirstChildOfClassAndName = function(Parent, ClassName, Name)
+			for Index, Child in next, GetChildren(Parent) do
+				if IsA(Child, ClassName) and Child.Name == Name then
+					return Child
+				end
+			end
+		end
+	
+		local GetHandleFromTable = function(Table)
+			for Index, Child in GetChildren(Character) do
+				if IsA(Child, "Accoutrement") then
+					local Handle = FindFirstChildOfClassAndName(Child, "BasePart", "Handle")
+	
+					if Handle then
+						local MeshId = nil
+						local TextureId = nil
+	
+						if IsA(Handle, "MeshPart") then
+							MeshId = Handle.MeshId
+							TextureId = Handle.TextureID
+						else
+							local SpecialMesh = FindFirstChildOfClass(Handle, "SpecialMesh")
+	
+							if SpecialMesh then
+								MeshId = SpecialMesh.MeshId
+								TextureId = SpecialMesh.TextureId
+							end
+						end
+	
+						if MeshId then
+							if stringfind(MeshId, Table.MeshId) and stringfind(TextureId, Table.TextureId) then
+								return Handle
+							end
+						end
+					end
+				end
+			end
+		end
+	
+		local NewIndex = function(self, Index, Value)
+			self[Index] = Value
+		end
+	
+		local DescendantAdded = function(Descendant)
+			if IsA(Descendant, "Accoutrement") and OptionsHatDrop then
+				if not pcall(NewIndex, Descendant, "BackendAccoutrementState", 0) then
+					if sethiddenproperty then
+						sethiddenproperty(Descendant, "BackendAccoutrementState", 0)
+					elseif setscriptable then
+						setscriptable(Descendant, "BacekndAccoutrementState", true)
+						Descendant.BackendAccoutrementState = 0
+					end
+				end
+			elseif IsA(Descendant, "Attachment") then
+				local Attachment = Attachments[Descendant.Name]
+	
+				if Attachment then
+					local Parent = Descendant.Parent
+	
+					if IsA(Parent, "BasePart") then
+						local MeshId = nil
+						local TextureId = nil
+	
+						if IsA(Parent, "MeshPart") then
+							MeshId = Parent.MeshId
+							TextureId = Parent.TextureID
+						else
+							local SpecialMesh = FindFirstChildOfClass(Parent, "SpecialMesh")
+	
+							if SpecialMesh then
+								MeshId = SpecialMesh.MeshId
+								TextureId = SpecialMesh.TextureId
+							end
+						end
+	
+						if MeshId then
+							for Index, Table in next, Accessories do
+								if Table.MeshId == MeshId and Table.TextureId == TextureId then
+									local Handle = Table.Handle
+	
+									tableinsert(Aligns, {
+										LastPosition = Handle.Position,
+										Offset = CFrameidentity,
+										Part0 = Parent,
+										Part1 = Handle
+									})
+	
+									return
+								end
+							end
+	
+							for Index, Table in next, OptionsAccessories do
+								if stringfind(MeshId, Table.MeshId) and stringfind(TextureId, Table.TextureId) then
+									local Instance = nil
+									local TableName = Table.Name
+									local TableNames = Table.Names
+	
+									if TableName then
+										Instance = FindFirstChildOfClassAndName(Rig, "BasePart", TableName)
+									else
+										for Index, TableName in next, TableNames do
+											local Child = FindFirstChildOfClassAndName(Rig, "BasePart", TableName)
+	
+											if not ( TableNames[Index + 1] and Blacklist[Child] ) then
+												Instance = Child
+												break
+											end
+										end
+									end
+	
+									if Instance then
+										local Blacklisted = Blacklist[Instance]
+	
+										if not ( Blacklisted and Blacklisted.MeshId == MeshId and Blacklisted.TextureId == TextureId ) then
+											tableinsert(Aligns, {
+												Offset = Table.Offset,
+												Part0 = Parent,
+												Part1 = Instance
+											})
+	
+											Blacklist[Instance] = { MeshId = MeshId, TextureId = TextureId }
+	
+											return
+										end
+									end
+								end
+							end
+	
+							local Accoutrement = FindFirstAncestorWhichIsA(Parent, "Accoutrement")
+	
+							if Accoutrement and IsA(Accoutrement, "Accoutrement") then
+								local AccoutrementClone = Clone(Accoutrement)
+	
+								local HandleClone = FindFirstChildOfClassAndName(AccoutrementClone, "BasePart", "Handle")
+								HandleClone.Transparency = OptionsRigTransparency
+	
+								for Index, Descendant in next, GetDescendants(HandleClone) do
+									if IsA(Descendant, "JointInstance") then
+										Destroy(Descendant)
+									end
+								end
+	
+								local AccessoryWeld = Instancenew("Weld")
+								AccessoryWeld.C0 = Descendant.CFrame
+								AccessoryWeld.C1 = Attachment.CFrame
+								AccessoryWeld.Name = "AccessoryWeld"
+								AccessoryWeld.Part0 = HandleClone
+								AccessoryWeld.Part1 = Attachment.Parent
+								AccessoryWeld.Parent = HandleClone
+	
+								AccoutrementClone.Parent = Rig
+	
+								tableinsert(Accessories, {
+									Handle = HandleClone,
+									MeshId = MeshId,
+									TextureId = TextureId
+								})
+								tableinsert(Aligns, {
+									Offset = CFrameidentity,
+									Part0 = Parent,
+									Part1 = HandleClone
+								})
+							end
+						end
+					end
+				end
+			end
+		end
+	
+		local SetCameraSubject = function()
+			local CameraCFrame = CurrentCamera.CFrame
+			local Position = RigHumanoidRootPart.CFrame.Position
+	
+			CurrentCamera.CameraSubject = RigHumanoid
+			Wait(PreRender)
+			CurrentCamera.CFrame = CameraCFrame + RigHumanoidRootPart.CFrame.Position - Position
+		end
+	
+		local OnCameraSubjectChanged = function()
+			if CurrentCamera.CameraSubject ~= RigHumanoid then
+				taskdefer(SetCameraSubject)
+			end
+		end
+	
+		local OnCameraTypeChanged = function()
+			if CurrentCamera.CameraType ~= Custom then
+				CurrentCamera.CameraType = Custom
+			end
+		end
+	
+		local OnCurrentCameraChanged = function()
+			local Camera = Workspace.CurrentCamera
+	
+			if Camera and OptionsSetCameraSubject then
+				CurrentCamera = Workspace.CurrentCamera
+	
+				taskspawn(SetCameraSubject)
+	
+				OnCameraSubjectChanged()
+				tableinsert(RBXScriptConnections, Connect(GetPropertyChangedSignal(CurrentCamera, "CameraSubject"), OnCameraSubjectChanged))
+	
+				if OptionsSetCameraType then
+					OnCameraTypeChanged()
+					tableinsert(RBXScriptConnections, Connect(GetPropertyChangedSignal(CurrentCamera, "CameraType"), OnCameraTypeChanged))
+				end
+			end
+		end
+	
+		local SetCharacter = function()
+			LocalPlayer.Character = Rig
+		end
+	
+		local SetSimulationRadius = function()
+			LocalPlayer.SimulationRadius = OptionsSimulationRadius
+		end
+	
+		local WaitForChildOfClass = function(Parent, ClassName)
+			local Child = FindFirstChildOfClass(Parent, ClassName)
+	
+			while not Child do
+				Wait(Parent.ChildAdded)
+				Child = FindFirstChildOfClass(Parent, ClassName)
+			end
+	
+			return Child
+		end
+	
+		local WaitForChildOfClassAndName = function(Parent, ...)
+			local Child = FindFirstChildOfClassAndName(Parent, ...)
+	
+			while not Child do
+				Wait(Parent.ChildAdded)
+				Child = FindFirstChildOfClassAndName(Parent, ...)
+			end
+	
+			return Child
+		end
+	
+		local Fling = function(Target, Options)
+			if Target then
+				local Highlight = Options.Highlight
+	
+				if IsA(Target, "Humanoid") then
+					Target = Target.Parent
+				end
+				if IsA(Target, "Model") then
+					Target = FindFirstChildOfClassAndName(Target, "BasePart", "HumanoidRootPart") or FindFirstChildWhichIsA(Character, "BasePart")
+				end
+	
+				if not tablefind(Targets, Target) and IsA(Target, "BasePart") and not Target.Anchored and not IsDescendantOf(Character, Target) and not IsDescendantOf(Rig, Target) then
+					local Model = FindFirstAncestorOfClass(Target, "Model")
+	
+					if Model and FindFirstChildOfClass(Model, "Humanoid") then
+						Target = FindFirstChildOfClassAndName(Model, "BasePart", "HumanoidRootPart") or FindFirstChildWhichIsA(Character, "BasePart") or Target	
+					else
+						Model = Target
+					end
+	
+					if Highlight then
+						local HighlightObject = type(Highlight) == "boolean" and Highlight and Instancenew("Highlight") or Clone(Highlight)
+						HighlightObject.Adornee = Model
+						HighlightObject.Parent = Model
+	
+						Options.HighlightObject = HighlightObject
+						tableinsert(Highlights, HighlightObject)
+					end
+	
+					Targets[Target] = Options
+	
+					if not OptionsDefaultFlingOptions.HatFling and OptionsPermanentDeath and replicatesignal then
+						replicatesignal(ConnectDiedSignalBackend)
+					end
+				end
+			end
+		end
+	
+		local OnCharacterAdded = function(NewCharacter)
+			if NewCharacter ~= Rig then
+				tableclear(Aligns)
+				tableclear(Blacklist)
+	
+				Character = NewCharacter
+	
+				if OptionsSetCameraSubject then
+					taskspawn(SetCameraSubject)
+				end
+	
+				if OptionsSetCharacter then
+					taskdefer(SetCharacter)
+				end
+	
+				if OptionsParentCharacter then
+					Character.Parent = Rig
+				end
+	
+				for Index, Descendant in next, GetDescendants(Character) do
+					taskspawn(DescendantAdded, Descendant)
+				end
+	
+				tableinsert(RBXScriptConnections, Connect(Character.DescendantAdded, DescendantAdded))
+	
+				Humanoid = WaitForChildOfClass(Character, "Humanoid")
+				local HumanoidRootPart = WaitForChildOfClassAndName(Character, "BasePart", "HumanoidRootPart")
+	
+				if IsFirst then
+					if OptionsApplyDescription and Humanoid then
+						local AppliedDescription = GetAppliedDescription(Humanoid)
+						SetAccessories(AppliedDescription, {}, true)
+						ApplyDescription(RigHumanoid, AppliedDescription)
+					end
+	
+					if HumanoidRootPart then
+						RigHumanoidRootPart.CFrame = HumanoidRootPart.CFrame
+	
+						if OptionsSetCollisionGroup then
+							local CollisionGroup = HumanoidRootPart.CollisionGroup
+	
+							for Index, Descendant in next, GetDescendants(Rig) do
+								if IsA(Descendant, "BasePart") then
+									Descendant.CollisionGroup = CollisionGroup
+								end
+							end
+						end
+					end
+	
+					IsFirst = false
+				end
+	
+				local IsAlive = true
+	
+				if HumanoidRootPart then
+					for Target, Options in next, Targets do
+						if IsDescendantOf(Target, Workspace) then
+							local FirstPosition = Target.Position
+							local PredictionFling = Options.PredictionFling
+							local LastPosition = FirstPosition
+							local Timeout = osclock() + Options.Timeout or 1
+	
+							if HumanoidRootPart then
+								while IsDescendantOf(Target, Workspace) and osclock() < Timeout do
+									local DeltaTime = taskwait()
+									local Position = Target.Position
+	
+									if ( Position - FirstPosition ).Magnitude > 100 then
+										break
+									end
+	
+									local Offset = Vector3zero
+	
+									if PredictionFling then
+										Offset = ( Position - LastPosition ) / DeltaTime * 0.13
+									end
+	
+									HumanoidRootPart.AssemblyAngularVelocity = FlingVelocity
+									HumanoidRootPart.AssemblyLinearVelocity = FlingVelocity
+	
+									HumanoidRootPart.CFrame = Target.CFrame + Offset
+									LastPosition = Position
+								end
+							end
+						end
+	
+						local HighlightObject = Options.HighlightObject
+	
+						if HighlightObject then
+							Destroy(HighlightObject)
+						end
+	
+						Targets[Target] = nil
+					end
+	
+					HumanoidRootPart.AssemblyAngularVelocity = Vector3zero
+					HumanoidRootPart.AssemblyLinearVelocity = Vector3zero
+	
+					if OptionsHatDrop then
+						taskspawn(function()
+							WaitForChildOfClassAndName(Character, "LocalScript", "Animate").Enabled = false
+	
+							for Index, AnimationTrack in next, GetPlayingAnimationTracks(Humanoid) do
+								AnimationTrack:Stop()
+							end
+	
+							LoadAnimation(Humanoid, Humanoid.RigType == R6 and R6Animation or R15Animation):Play(0)
+	
+							pcall(NewIndex, Workspace, "FallenPartsDestroyHeight", nan)
+	
+							local RootPartCFrame = RigHumanoidRootPart.CFrame
+							RootPartCFrame = CFramenew(RootPartCFrame.X, HatDropY, RootPartCFrame.Z)
+	
+							while IsAlive do
+								HumanoidRootPart.AssemblyAngularVelocity = Vector3zero
+								HumanoidRootPart.AssemblyLinearVelocity = HatDropLinearVelocity
+								HumanoidRootPart.CFrame = RootPartCFrame
+	
+								taskwait()
+							end
+						end)
+					elseif OptionsHideCharacter then
+						local HideCharacterOffset = typeof(OptionsHideCharacter) == "Vector3" and OptionsHideCharacter or HideCharacterOffset
+						local RootPartCFrame = RigHumanoidRootPart.CFrame + HideCharacterOffset
+	
+						taskspawn(function()
+							while IsAlive do
+								HumanoidRootPart.AssemblyAngularVelocity = Vector3zero
+								HumanoidRootPart.AssemblyLinearVelocity = Vector3zero
+								HumanoidRootPart.CFrame = RootPartCFrame
+	
+								taskwait()
+							end
+						end)
+					elseif OptionsTeleportRadius then
+						HumanoidRootPart.CFrame = RigHumanoidRootPart.CFrame + Vector3new(mathrandom(- OptionsTeleportRadius, OptionsTeleportRadius), 0, mathrandom(- OptionsTeleportRadius, OptionsTeleportRadius))
+					end
+				end
+	
+				if OptionsPermanentDeath and replicatesignal then
+					replicatesignal(ConnectDiedSignalBackend)
+	
+					taskwait(Players.RespawnTime + 0.2)
+	
+					Refitting = false
+					replicatesignal(Kill)
+				else
+					taskwait(OptionsBreakJointsDelay)
+				end
+	
+				ModelBreakJoints(Character)
+	
+				if Humanoid then
+					if replicatesignal and OptionsUseServerBreakJoints then
+						replicatesignal(Humanoid.ServerBreakJoints)
+					end
+	
+					ChangeState(Humanoid, Dead)
+					Wait(Humanoid.Died)
+				end
+	
+				IsAlive = false
+	
+				if OptionsHatDrop then
+					pcall(NewIndex, Workspace, "FallenPartsDestroyHeight", FallenPartsDestroyHeight)
+				end
+			end
+		end
+	
+		local OnInputBegan = function(InputObject)
+			if InputObject.UserInputType == MouseButton1 then
+				local Target = Mouse.Target
+	
+				local HatFling = OptionsDefaultFlingOptions.HatFling
+				local ToolFling = OptionsDefaultFlingOptions.ToolFling
+	
+				if HatFling and OptionsHatDrop then
+					local Part = type(HatFling) == "table" and GetHandleFromTable(HatFling)
+	
+					if not Part then
+						for Index, Child in GetChildren(Character) do
+							if IsA(Child, "Accoutrement") then
+								local Handle = FindFirstChildOfClassAndName(Child, "BasePart", "Handle")
+	
+								if Handle then
+									Part = Handle
+									break
+								end
+							end
+						end
+					end
+	
+					if Part then
+						Exceptions[Part] = true
+	
+						while IsMouseButtonPressed(UserInputService, MouseButton1) do
+							if Part.ReceiveAge == 0 then
+								Part.AssemblyAngularVelocity = FlingVelocity
+								Part.AssemblyLinearVelocity = FlingVelocity
+								Part.CFrame = Mouse.Hit + AntiSleep
+							end
+	
+							taskwait()
+						end
+	
+						Exceptions[Part] = false
+					end
+				elseif ToolFling then
+					local Backpack = FindFirstChildOfClass(LocalPlayer, "Backpack")
+					local Tool = nil
+	
+					if type(ToolFling) == "string" then
+						Tool = FindFirstChild(Backpack, ToolFling) or FindFirstChild(Character, ToolFling)
+					end
+	
+					if not Tool then
+						Tool = FindFirstChildOfClass(Backpack, "Tool") or FindFirstChildOfClass(Character, "Tool")
+					end
+	
+					if Tool then
+						local Handle = FindFirstChildOfClassAndName(Tool, "BasePart", "Handle") or FindFirstChildWhichIsA(Tool, "BasePart")
+	
+						if Handle then
+							UnequipTools(Humanoid)
+							taskwait()
+							EquipTool(Humanoid, Tool)
+	
+							while IsMouseButtonPressed(UserInputService, MouseButton1) do
+								if Handle.ReceiveAge == 0 then
+									Handle.AssemblyAngularVelocity = FlingVelocity
+									Handle.AssemblyLinearVelocity = FlingVelocity
+									Handle.CFrame = Mouse.Hit + AntiSleep
+								end
+	
+								taskwait()
+							end
+	
+							UnequipTools(Humanoid)
+	
+							Handle.AssemblyAngularVelocity = Vector3zero
+							Handle.AssemblyLinearVelocity = Vector3zero
+							Handle.CFrame = RigHumanoidRootPart.CFrame
+						end
+					end
+				else
+					Fling(Target, OptionsDefaultFlingOptions)
+				end
+			end
+		end
+	
+		local OnPostSimulation = function()
+			Time = osclock()
+			local DeltaTime = Time - LastTime
+			LastTime = Time
+	
+			if not OptionsSetCharacter and IsLockCenter then
+				local Position = RigHumanoidRootPart.Position
+				RigHumanoidRootPart.CFrame = CFramelookAt(Position, Position + CurrentCamera.CFrame.LookVector * Vector3xzAxis)
+			end
+	
+			if OptionsSimulationRadius then
+				pcall(SetSimulationRadius)
+			end
+	
+			AntiSleep = mathsin(Time * 15) * 0.0015 * Vector3one
+			local Axis = 27 + mathsin(Time)
+	
+			for Index, Table in next, Aligns do
+				local Part0 = Table.Part0
+	
+				if not Exceptions[Part0] then
+					if Part0.ReceiveAge == 0 then
+						if IsDescendantOf(Part0, Workspace) and not GetJoints(Part0)[1] and not IsGrounded(Part0) then
+							local Part1 = Table.Part1
+	
+							Part0.AssemblyAngularVelocity = Vector3zero
+	
+							local LinearVelocity = Part1.AssemblyLinearVelocity * Axis
+							Part0.AssemblyLinearVelocity = Vector3new(LinearVelocity.X, Axis, LinearVelocity.Z)
+	
+							Part0.CFrame = Part1.CFrame * Table.Offset + AntiSleep
+						end
+					else
+						local Frames = Table.Frames or - 1
+						Frames = Frames + 1
+						Table.Frames = Frames
+	
+						if Frames > 15 and OptionsPermanentDeath and OptionsRefit and replicatesignal then
+							Refitting = false
+							replicatesignal(ConnectDiedSignalBackend)
+						end
+					end
+				end
+			end
+	
+			if not OptionsSetCharacter and Humanoid then
+				Move(RigHumanoid, Humanoid.MoveDirection)
+				RigHumanoid.Jump = Humanoid.Jump
+			end
+	
+			--[[if IsRegistered then
+				SetCore(StarterGui, "ResetButtonCallback", BindableEvent)
+			else
+				IsRegistered = pcall(SetCore, StarterGui, "ResetButtonCallback", BindableEvent)
+			end]]
+		end
+	
+		local OnPreRender = function()
+			local Position = RigHumanoidRootPart.Position
+			RigHumanoidRootPart.CFrame = CFramelookAt(Position, Position + CurrentCamera.CFrame.LookVector * Vector3xzAxis)
+	
+			for Index, Table in next, Aligns do
+				local Part0 = Table.Part0
+	
+				if Part0.ReceiveAge == 0 and IsDescendantOf(Part0, Workspace) and not GetJoints(Part0)[1] and not IsGrounded(Part0) then
+					Part0.CFrame = Table.Part1.CFrame * Table.Offset
+				end
+			end
+		end
+	
+		local OnMouseBehaviorChanged = function()
+			IsLockCenter = UserInputService.MouseBehavior == LockCenter
+	
+			if IsLockCenter then
+				PreRenderConnection = Connect(PreRender, OnPreRender)
+				tableinsert(RBXScriptConnections, PreRenderConnection)
+			elseif PreRenderConnection then
+				Disconnect(PreRenderConnection)
+				tableremove(RBXScriptConnections, tablefind(RBXScriptConnections, PreRenderConnection))
+			end
+		end
+	
+		local OnPreSimulation = function()
+			if OptionsDisableCharacterCollisions and Character then
+				for Index, Descendant in next, GetDescendants(Character) do
+					if IsA(Descendant, "BasePart") then
+						Descendant.CanCollide = false
+					end
+				end
+			end
+			if OptionsDisableRigCollisions then
+				for Index, Descendant in next, GetChildren(Rig) do
+					if IsA(Descendant, "BasePart") then
+						Descendant.CanCollide = false
+					end
+				end
+			end
+		end
+	
+		Start = function(Options)
+			if not IsRunning then
+				IsFirst = true
+				IsRunning = true
+	
+				Options = Options or {}
+				OptionsAccessories = Options.Accessories or {}
+				OptionsApplyDescription = Options.ApplyDescription
+				OptionsBreakJointsDelay = Options.BreakJointsDelay or 0
+				OptionsClickFling = Options.ClickFling
+				OptionsDisableCharacterCollisions = Options.DisableCharacterCollisions
+				OptionsDisableHealthBar = Options.DisableHealthBar
+				OptionsDisableRigCollisions = Options.DisableRigCollisions
+				OptionsDefaultFlingOptions = Options.DefaultFlingOptions or {}
+				OptionsHatDrop = Options.HatDrop
+				OptionsHideCharacter = Options.HideCharacter
+				OptionsParentCharacter = Options.ParentCharacter
+				OptionsPermanentDeath = Options.PermanentDeath
+				OptionsRefit = Options.Refit
+				local OptionsRigSize = Options.RigSize
+				OptionsRigTransparency = Options.RigTransparency or 1
+				OptionsSetCameraSubject = Options.SetCameraSubject
+				OptionsSetCameraType = Options.SetCameraType
+				OptionsSetCharacter = Options.SetCharacter
+				OptionsSetCollisionGroup = Options.SetCollisionGroup
+				OptionsSimulationRadius = Options.SimulationRadius
+				OptionsTeleportRadius = Options.TeleportRadius
+				OptionsUseServerBreakJoints = Options.UseServerBreakJoints
+	
+				if OptionsDisableHealthBar then
+					IsHealthEnabled = GetCoreGuiEnabled(StarterGui, Health)
+					SetCoreGuiEnabled(StarterGui, Health, false)
+				end
+	
+				BindableEvent = Instancenew("BindableEvent")
+				tableinsert(RBXScriptConnections, Connect(BindableEvent.Event, Stop))
+	
+				Rig = Options.R15 and Clone(R15HumanoidModel) or Clone(HumanoidModel)
+				Rig.Name = LocalPlayer.Name
+				RigHumanoid = Rig.Humanoid
+				RigHumanoidRootPart = Rig.HumanoidRootPart
+				Rig.Parent = Workspace
+	
+				for Index, Descendant in next, GetDescendants(Rig) do
+					if IsA(Descendant, "Attachment") then
+						Attachments[Descendant.Name] = Descendant
+					elseif IsA(Descendant, "BasePart") or IsA(Descendant, "Decal") then
+						Descendant.Transparency = OptionsRigTransparency
+					end
+				end
+	
+				if OptionsRigSize then
+					ScaleTo(Rig, OptionsRigSize)
+	
+					RigHumanoid.JumpPower = 50
+					RigHumanoid.WalkSpeed = 16
+				end
+	
+				OnCurrentCameraChanged()
+				tableinsert(RBXScriptConnections, Connect(CurrentCameraChanged, OnCurrentCameraChanged))
+	
+				if OptionsClickFling then
+					tableinsert(RBXScriptConnections, Connect(InputBegan, OnInputBegan))
+				end
+	
+				local Character = LocalPlayer.Character
+	
+				if Character then
+					OnCharacterAdded(Character)
+				end
+	
+				tableinsert(RBXScriptConnections, Connect(CharacterAdded, OnCharacterAdded))
+	
+				LastTime = osclock()
+				tableinsert(RBXScriptConnections, Connect(PostSimulation, OnPostSimulation))
+	
+				if not OptionsSetCharacter then
+					OnMouseBehaviorChanged()
+					tableinsert(RBXScriptConnections, Connect(MouseBehaviorChanged, OnMouseBehaviorChanged))
+				end
+	
+				if OptionsDisableCharacterCollisions or OptionsDisableRigCollisions then
+					OnPreSimulation()
+					tableinsert(RBXScriptConnections, Connect(PreSimulation, OnPreSimulation))
+				end
+	
+				IsRegistered = pcall(SetCore, StarterGui, "ResetButtonCallback", BindableEvent)
+	
+				if not IsRegistered then
+					taskspawn(function()
+						for Index = 1, 7 do
+							if not IsRegistered then
+								IsRegistered = pcall(SetCore, StarterGui, "ResetButtonCallback", BindableEvent)
+								taskwait()
+							else
+								break
+							end
+						end
+					end)
+				end
+	
+				return {
+					BindableEvent = BindableEvent,
+					Fling = Fling,
+					Rig = Rig
+				}
+			end
+		end
+	
+		Stop = function()
+			if IsRunning then
+				IsFirst = false
+				IsRunning = false
+	
+				for Index, Highlight in Highlights do
+					Destroy(Highlight)
+				end
+	
+				tableclear(Highlights)
+	
+				for Index, RBXScriptConnection in next, RBXScriptConnections do
+					Disconnect(RBXScriptConnection)
+				end
+	
+				tableclear(RBXScriptConnections)
+	
+				Destroy(BindableEvent)
+	
+				if Character.Parent == Rig then
+					Character.Parent = Workspace
+				end
+	
+				if Humanoid then
+					ChangeState(Humanoid, Dead)
+				end
+	
+				Destroy(Rig)
+	
+				if OptionsPermanentDeath and replicatesignal then
+					replicatesignal(ConnectDiedSignalBackend)
+				end
+	
+				if OptionsDisableHealthBar and not GetCoreGuiEnabled(StarterGui, Health) then
+					SetCoreGuiEnabled(StarterGui, Health, IsHealthEnabled)
+				end
+	
+				if IsRegistered then
+					pcall(SetCore, StarterGui, "ResetButtonCallback", true)
+				else
+					IsRegistered = pcall(SetCore, StarterGui, "ResetButtonCallback", true)
+				end
+			end
+		end
+	end
+	
+	Empyrean = Start({
+		Accessories = {
+			--{ MeshId = "", Name = "", Offset = CFrame.identity, TextureId = "" },
+	
+			{ MeshId = "137702817952968", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "135650240593878" },--84451219120140
+			{ MeshId = "137702817952968", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "135650240593878" },--72292903231768
+	
+			{ MeshId = "137702817952968", Names = { "Left Leg", "Right Leg", "Left Arm", "Right Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "73798034827573" },--108186273151388
+			{ MeshId = "137702817952968", Names = { "Right Leg", "Left Leg", "Right Arm", "Left Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "73798034827573" },--139904067056008
+	
+			{ MeshId = "12344207333", Names = { "Left Arm", "Right Arm" }, Offset = CFrame.Angles(- 2.094, 0, 0), TextureId = "12344207341" },--12344545199
+			{ MeshId = "12344206657", Names = { "Right Arm", "Left Arm" }, Offset = CFrame.Angles(- 2.094, 0, 0), TextureId = "12344206675" },--12344591101
+	
+			{ MeshId = "11449386931", Names = { "Left Arm", "Right Arm" }, Offset = CFrame.Angles(- 2.094, 0, 0), TextureId = "11439439606" },--11449687315
+			{ MeshId = "11449388499", Names = { "Right Arm", "Left Arm" }, Offset = CFrame.Angles(- 2.094, 0, 0), TextureId = "11439439606" },--11449703382
+	
+			{ MeshId = "12652772399", Names = { "Left Leg", "Right Leg" }, Offset = CFrame.identity, TextureId = "12652775021" },--12652786974
+	
+			{ MeshId = "11263221350", Names = { "Left Leg", "Right Leg", "Left Arm", "Right Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "11263219250" },--11263254795
+			{ MeshId = "11159370334", Names = { "Right Leg", "Left Leg", "Right Arm", "Left Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "11159284657" },--11159410305
+			{ MeshId = "11159370334", Names = { "Right Leg", "Left Leg", "Right Arm", "Left Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "11159285454" },--11159483910
+	
+			{ MeshId = "105141400603933", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "71060417496309" },--102599402682100
+			{ MeshId = "99608462237958", Names = { "Right Arm", "Left Arm", "Right Leg", "Left Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "130809869695496" },--140395948277978
+	
+			{ MeshId = "90736849096372", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "79186624401216" },--90960046381276
+			{ MeshId = "139733645770094", Names = { "Right Arm", "Left Arm", "Right Leg", "Left Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "130809869695496" },--82942681251131
+	
+			{ MeshId = "125405780718494", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "136752500636691" },--85392395166623
+			{ MeshId = "125405780718494", Names = { "Right Arm", "Left Arm", "Right Leg", "Left Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "136752500636691" },--131385506535381
+	
+			{ MeshId = "125405780718494", Names = { "Left Leg", "Right Leg", "Left Arm", "Right Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "136752500636691" },--106249329428811
+			{ MeshId = "125405780718494", Names = { "Right Leg", "Left Leg", "Right Arm", "Left Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "136752500636691" },--129462518582032
+	
+			{ MeshId = "14255522247", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "14255543546" },--14255556501
+			{ MeshId = "14255522247", Names = { "Right Arm", "Left Arm", "Right Leg", "Left Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "14255543546" },--14255554762
+	
+			{ MeshId = "17374767929", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "17374768001" },--17374851733
+			{ MeshId = "17374767929", Names = { "Right Arm", "Left Arm", "Right Leg", "Left Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "17374768001" },--17374846953
+	
+			{ MeshId = "14255522247", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "14255544465" },--14255560646
+			{ MeshId = "14255522247", Names = { "Right Arm", "Left Arm", "Right Leg", "Left Leg" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "14255544465" },--14255562939
+	
+			{ MeshId = "18640914129", Names = { "Left Arm", "Right Arm", "Left Leg", "Right Leg" }, Offset = CFrame.identity, TextureId = "18640914168" },--18641142410
+			{ MeshId = "18640914129", Names = { "Right Arm", "Left Arm", "Right Leg", "Left Leg" }, Offset = CFrame.identity, TextureId = "18640914168" },--18641077392
+	
+			{ MeshId = "18640901641", Names = { "Left Leg", "Right Leg", "Left Arm", "Right Arm" }, Offset = CFrame.identity, TextureId = "18640901676" },--18641187217
+			{ MeshId = "18640901641", Names = { "Right Leg", "Left Leg", "Right Arm", "Left Arm" }, Offset = CFrame.identity, TextureId = "18640901676" },--18641157833
+	
+			{ MeshId = "17387586286", Names = { "Left Leg", "Right Leg", "Left Arm", "Right Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "17387586304" },--17387616772
+			{ MeshId = "17387586286", Names = { "Right Leg", "Left Leg", "Right Arm", "Left Arm" }, Offset = CFrame.Angles(0, 0, 1.57), TextureId = "17387586304" },--17393641992
+	
+			{ MeshId = "3030546036", Names = { "Left Arm", "Left Leg", "Right Arm", "Right Leg" }, Offset = CFrame.Angles(- 1.57, 0, 0), TextureId = "" },
+			{ MeshId = "4324138105", Names = { "Left Arm", "Left Leg", "Right Arm", "Right Leg" }, Offset = CFrame.Angles(- 1.57, 0, 0), TextureId = "" },
+	
+			{ MeshId = "18640899369", Name = "Torso", Offset = CFrame.identity, TextureId = "18640899481" },--18641046146
+			{ MeshId = "14241018198", Name = "Torso", Offset = CFrame.identity, TextureId = "14251599953" },--14255528083
+			{ MeshId = "110684113028749", Name = "Torso", Offset = CFrame.identity, TextureId = "70661572547971" },--138364679836274
+			{ MeshId = "4819720316", Name = "Torso", Offset = CFrame.Angles(0, 0, -0.249), TextureId = "4819722776" },--4819740796
+			{ MeshId = "126825022897778", Name = "Torso", Offset = CFrame.identity, TextureId = "125975972015302" },--95290698984301
+	
+		},
+		ApplyDescription = true,
+		BreakJointsDelay = 0.255,
+		ClickFling = false,
+		DefaultFlingOptions = {
+			HatFling = false,--{ MeshId="", TextureId = ""},
+			Highlight = false,
+			PredictionFling = true,
+			Timeout = 1,
+			ToolFling = false,--"Boombox",
+		},
+		DisableCharacterCollisions = true,
+		DisableHealthBar = true,
+		DisableRigCollisions = true,
+		HatDrop = false,
+		HideCharacter = Vector3.new(0, - 30, 0),
+		ParentCharacter = true,
+		PermanentDeath = true,
+		Refit = false,
+		RigSize = 1,
+		RigTransparency = 1,
+		R15 = false,
+		SetCameraSubject = true,
+		SetCameraType = true,
+		SetCharacter = true,
+		SetCollisionGroup = true,
+		SimulationRadius = 2147483647,
+		TeleportRadius = 12,
+		UseServerBreakJoints = false,
+	})
+	task.wait(3)
+	
+	
+	if not getgenv()["Animator"] then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+		hookAnimatorFunction()
+	end
+	
+	local Anim
+	local id
+	local walk = 126211629545369
+	local mouse1 = false
+	local finish = false
+	local i = 70606242536780
+	local m1 = 18885909645
+	local fid = 89669118763885
+	local sprinting1 = false
+	local pizza = false
+	local pizzaid = 18885915433
+	local CN = false
+	local CNid = 85067074759975
+	local run = 98514136427416
+	local uis = game:GetService("UserInputService")
+	local walking = false
+	local hwalking = 132377038617766
+	local hurt = false
+	local hidle = 134624270247120
+	local hrun = 115946474977409
+	local sprinting = false
+	local WO = false
+	local WOsid = 18885932392
+	local WOl = 18885939653
+	local WOe = 18885940850
+	local taunt = false
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local idle = true
+	local char = game.Players.LocalPlayer.Character
+	local hum = char:FindFirstChild("Humanoid")
+	Anim = hum:LoadAnimation(i)
+	Anim:Play()
+	id = i
+	hum.WalkSpeed = 7.5
+	uis.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.LeftShift and CN == false and pizza == false then
+			sprinting1 = true
+			hum.WalkSpeed = 28
+		end
+	end)
+	uis.InputEnded:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.LeftShift and CN == false and pizza == false then
+			sprinting1 = false
+			hum.WalkSpeed = 7.5
+		end
+	end)
+	uis.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.One then
+			Anim:Stop()
+			id = "taunt"
+			Anim = hum:LoadAnimation(111309618966926)
+			taunt = true
+			Anim:Play()
+		end
+	end)
+	
+	uis.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.T and taunt == false and pizza == false then
+			if id ~= fid then 
+				hum.WalkSpeed = 0
+				sprinting1 = false
+				finish = true
+				Anim:Stop(2)
+				Anim = hum:LoadAnimation(fid)
+				Anim.Looped = false
+				Anim:Play()
+				id = fid
+				wait(4)
+				finish = false
+				hum.WalkSpeed = 6
+	
+	
+			end
+		end
+	end)
+	uis.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.Q and pizza == false and finish == false then
+			sprinting1 = false
+			wait(.1)    
+			CN = true
+			hum.WalkSpeed = 0
+			wait(.5)
+			CN = false
+			hum.WalkSpeed = 9
+		end
+	end)
+	uis.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.R and CN == false and finish == false  then
+			sprinting1 = false
+			wait(.1)    
+			pizza = true
+			hum.WalkSpeed = 0
+			wait(2.6)
+			pizza = false
+			hum.WalkSpeed = 9
+		end
+	end)
+	local function onButton1Down()
+		if id ~= m1 then 
+			mouse1 = true
+			Anim:Stop()
+			Anim = hum:LoadAnimation(m1)
+			Anim.Looped = false
+			Anim:Play()
+			id = m1
+			wait(.5)
+			mouse1 = false
+		end
+	end
+	
+	mouse.Button1Down:Connect(onButton1Down)
+	while wait() do
+		if idle == true and taunt == false and hurt == false and CN == false and pizza == false and mouse1 == false and finish == false then
+			if id ~= i then 
+				Anim:Stop(2)
+				Anim = hum:LoadAnimation(i)
+				Anim.Looped = true
+				Anim:Play()
+				id = i
+			end
+		end
+		if walking == true and taunt == false and hurt == false and sprinting1 == false and CN == false and pizza == false and finish == false and mouse1 == false then
+			if id ~= walk then
+				Anim:Stop(2)
+				Anim = hum:LoadAnimation(walk)
+				Anim.Looped = true
+				Anim:Play() 
+				id = walk
+			end
+		end
+		if sprinting == true and taunt == false and hurt == false and mouse1 == false then
+			if id ~= run then
+				Anim:Stop(2)
+				Anim = hum:LoadAnimation(run)
+				Anim.Looped = true
+				Anim:Play() 
+				id = run
+			end
+		end
+		if hum.MoveDirection ~= Vector3.new(0, 0, 0) and sprinting1 == false then
+			walking = true
+			sprinting = false
+			idle = false
+			taunt = false
+		end
+		if hum.MoveDirection ~= Vector3.new(0, 0, 0) and sprinting1 == true and mouse1 == false and finish == false  then
+			walking = false
+			sprinting = true
+			idle = false
+			taunt = false
+		end
+		if hum.MoveDirection == Vector3.new(0,0,0) then
+			idle = true
+			walking = false
+			sprinting = false
+		end
+		if idle == true and taunt == false and mouse1 == false and hurt == true and CN == false and pizza == false and finish == false  then
+			if id ~= hidle then 
+				Anim:Stop(2)
+				Anim = hum:LoadAnimation(hidle)
+				Anim.Looped = true
+				Anim:Play()
+				id = hidle
+			end
+		end
+		if walking == true and taunt == false and mouse1 == false and hurt == true and sprinting1 == false and attack == false and pizza == false and finish == false  then
+			if id ~= hwalking then
+				Anim:Stop(2)
+				Anim = hum:LoadAnimation(hwalking)
+				Anim.Looped = true
+				Anim:Play() 
+				id = hwalking
+			end
+		end
+		if sprinting == true and taunt == false and hurt == true and mouse1 == false then
+			if id ~= hrun then
+				Anim:Stop(2)
+				Anim = hum:LoadAnimation(hrun)
+				Anim.Looped = true
+				Anim:Play() 
+				id = hrun
+			end
+		end
+		if pizza == true and taunt == false then
+			if id ~= pizzaid then 
+				Anim:Stop()
+				Anim = hum:LoadAnimation(pizzaid)
+				Anim.Looped = false
+				Anim:Play()
+				id = pizzaid
+			end
+		end
+		if CN == true and taunt == false then
+			if id ~= CNid then 
+				Anim:Stop()
+				Anim = hum:LoadAnimation(CNid)
+				Anim.Looped = false
+				Anim:Play()
+				id = CNid
+			end
+		end
+	
+		end
+		end)
+end
+coroutine.wrap(ZEXWIFG_script)()
+local function HTBUH_script() -- Reanimate.LocalScript 
+	local script = Instance.new('LocalScript', Reanimate)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(HTBUH_script)()
+local function ETRCV_script() -- Respawn.LocalScript 
+	local script = Instance.new('LocalScript', Respawn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end)
+end
+coroutine.wrap(ETRCV_script)()
+local function SPBU_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.CoolMan:Destroy()
+	end)
+end
+coroutine.wrap(SPBU_script)()
+local function YDQE_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	--This script has been modified by MetaliumWorks (@jgfuhjkkl_2) [mw/ʍɯ]
+	
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    dragSpeed = 0.25
+	    dragInput = nil
+	    dragStart = nil
+	    dragPos = nil
+	    function updateInput(input)
+	        Delta = input.Position - dragStart
+	        Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.20, Enum.EasingStyle.Back), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(YDQE_script)()
+local function WDDUBGY_script() -- Invite.LocalScript 
+	local script = Instance.new('LocalScript', Invite)
+
+	while true do
+		wait(0)
+		script.Parent.Text = "https://dsc.gg/astrolua"
+	end
+end
+coroutine.wrap(WDDUBGY_script)()
+local function IULILI_script() -- Minimize.LocalScript 
+	local script = Instance.new('LocalScript', Minimize)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.CoolMan.Close.Visible = true
+		script.Parent.Parent.Parent.Frame.Visible = false
+	end)
+end
+coroutine.wrap(IULILI_script)()
+local function ZOOMO_script() -- Hide.LocalScript 
+	local script = Instance.new('LocalScript', Hide)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.Parent.CoolMan.Keybind.Visible == true then
+			script.Parent.Parent.Parent.Parent.CoolMan.Keybind.Visible = false else
+			script.Parent.Parent.Parent.Parent.CoolMan.Keybind.Visible = true
+		end
+	end)
+end
+coroutine.wrap(ZOOMO_script)()
+local function VUFFSFU_script() -- Mobile.LocalScript 
+	local script = Instance.new('LocalScript', Mobile)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local isMobile = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+	
+	
+	if isMobile then
+		script.Parent.Visible = true
+	else
+		script.Parent.Visible = false
+	end
+end
+coroutine.wrap(VUFFSFU_script)()
+local function RKQJYCH_script() -- Mobile.LocalScript 
+	local script = Instance.new('LocalScript', Mobile)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local UserInputService = game:GetService("UserInputService")
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local isMobile = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+	
+		if not isMobile then return end -- Only show on mobile devices
+	
+		local screenGui = script.Parent.Parent.Parent.Parent.CoolMan
+		local keyboardFrame = Instance.new("Frame")
+		keyboardFrame.Size = UDim2.new(1, 0, 0.4, 0)
+		keyboardFrame.Position = UDim2.new(0, 0, 0.6, 0)
+		keyboardFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		keyboardFrame.BorderSizePixel = 0
+		keyboardFrame.Visible = true
+		keyboardFrame.Name = "VirtualKeyboard"
+		keyboardFrame.Parent = screenGui
+	
+		local UIScale = Instance.new("UIScale", keyboardFrame)
+		UIScale.Scale = 1
+	
+		local closeButton = Instance.new("TextButton")
+		closeButton.Size = UDim2.new(0, 40, 0, 40)
+		closeButton.Position = UDim2.new(1, -50, 0, 10)
+		closeButton.Text = "X"
+		closeButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+		closeButton.TextColor3 = Color3.new(1, 1, 1)
+		closeButton.Parent = keyboardFrame
+	
+		closeButton.MouseButton1Click:Connect(function()
+			keyboardFrame.Visible = false
+		end)
+	
+		local minimizeButton = Instance.new("TextButton")
+		minimizeButton.Size = UDim2.new(0, 40, 0, 40)
+		minimizeButton.Position = UDim2.new(1, -100, 0, 10)
+		minimizeButton.Text = "-"
+		minimizeButton.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+		minimizeButton.TextColor3 = Color3.new(1, 1, 1)
+		minimizeButton.Parent = keyboardFrame
+	
+		minimizeButton.MouseButton1Click:Connect(function()
+			keyboardFrame.Visible = not keyboardFrame.Visible
+		end)
+	
+		local grid = Instance.new("UIGridLayout")
+		grid.CellSize = UDim2.new(0, 50, 0, 50)
+		grid.CellPadding = UDim2.new(0, 5, 0, 5)
+		grid.FillDirectionMaxCells = 10
+		grid.SortOrder = Enum.SortOrder.LayoutOrder
+		grid.Parent = keyboardFrame
+	
+		local keys = {
+			"A","B","C","D","E","F","G","H","I","J","K","L","M",
+			"N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+			"1","2","3","4","5","6","7","8","9","0",
+			"Space","Backspace"
+		}
+	
+		-- Simulated key press
+		local function onKeyPressed(key)
+			print("Simulated key pressed: " .. key)
+			-- Hook this to your system (example: trigger L animation or whatever)
+		end
+	
+		-- Key press with hold
+		for _, key in pairs(keys) do
+			local button = Instance.new("TextButton")
+			button.Size = UDim2.new(0, 50, 0, 50)
+			button.Text = key
+			button.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+			button.TextColor3 = Color3.new(1, 1, 1)
+			button.AutoButtonColor = true
+			button.Parent = keyboardFrame
+	
+			local holding = false
+			local loop
+	
+			button.MouseButton1Down:Connect(function()
+				holding = true
+				onKeyPressed(key)
+	
+				loop = task.spawn(function()
+					while holding do
+						task.wait(0.1) -- repeat rate
+						onKeyPressed(key)
+					end
+				end)
+			end)
+	
+			button.MouseButton1Up:Connect(function()
+				holding = false
+				if loop then task.cancel(loop) end
+			end)
+	
+			button.TouchEnded:Connect(function()
+				holding = false
+				if loop then task.cancel(loop) end
+			end)
+		end
+	
+	end)
+end
+coroutine.wrap(RKQJYCH_script)()
+local function HAQEIFC_script() -- HideMobile.LocalScript 
+	local script = Instance.new('LocalScript', HideMobile)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.Parent.CoolMan.KeybindMobile.Visible == true then
+			script.Parent.Parent.Parent.Parent.CoolMan.KeybindMobile.Visible = false else
+			script.Parent.Parent.Parent.Parent.CoolMan.KeybindMobile.Visible = true
+		end
+	end)
+end
+coroutine.wrap(HAQEIFC_script)()
+local function SVMDI_script() -- HideMobile.LocalScript 
+	local script = Instance.new('LocalScript', HideMobile)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local isMobile = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+	
+	
+	if isMobile then
+		script.Parent.Visible = true
+		script.Parent.Parent.Hide.Visible = false
+	else
+		script.Parent.Parent.Hide.Visible = true
+		script.Parent.Parent.HideMobile.Visible = false
+	end
+end
+coroutine.wrap(SVMDI_script)()
+local function KXOIOP_script() -- Close_2.LocalScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Visible = false
+		game.Players.LocalPlayer.PlayerGui.CoolMan.Frame.Visible = true
+	end)
+end
+coroutine.wrap(KXOIOP_script)()
+local function USGWAZP_script() -- KeybindMobile.LocalScript 
+	local script = Instance.new('LocalScript', KeybindMobile)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local isMobile = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+	
+	
+	if isMobile then
+		script.Parent.Parent.KeybindMobile.Visible = true
+		script.Parent.Parent.Keybind.Visible = false
+	else
+		script.Parent.Parent.KeybindMobile.Visible = false
+		script.Parent.Parent.Keybind.Visible = true
+	end
+end
+coroutine.wrap(USGWAZP_script)()
